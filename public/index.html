@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form id="formProduct">
+        <label for="title">title:</label>
+        <input type="text" id="title" name="title">
+        <br>
+        <br>
+        <label for="price">price:</label>
+        <input type="text" id="price" name="price">
+        <br>
+        <br>
+        <label for="thumbnail">thumbnail:</label>
+        <input type="text" id="thumbnail" name="thumbnail">
+        <br>
+        <br>
+        <input type="button" id="btnSubmit" value="Enviar">
+    </form>
+
+    <div id="tableProduct"></div>
+
+    <div id="chat">
+        <label for="email">Email:</label>
+        <input type="text" id="email">
+        <div id="chatMessage"></div>
+        <input type="text" id="message">
+        <input type="button" id="btnNewMessage" value="Enviar mensaje">
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script src="/index.js"></script>
+</body>
+</html>
